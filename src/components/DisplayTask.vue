@@ -15,6 +15,7 @@ export default {
         },
         deleteTask(){
             //JSのPrompt利用
+            alert('このタスクを削除してよろしいですか？')
         }
     }
 }
