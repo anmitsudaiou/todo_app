@@ -1,10 +1,10 @@
 <template>
-    <div>
+    <div class="a">
         <h3>ToDoリスト</h3>
          <!-- タスク登録用のモーダルウィンドウが表示される -->
         <open-modal v-if="clickStateOfAddNewTask" @close-modal="closeModal">
         </open-modal>
-        <button @click="openModal">タスクを新規追加</button>
+        <button id="addTask" @click="openModal">タスクを新規追加</button>
         <display-task></display-task>
     </div>
 </template>
@@ -58,5 +58,12 @@ export default {
         /* display: block; */
         width: 100%;
         background: #fff;
+    }
+
+    #addTask {
+        color: blue;
+        color-scheme: blue;
+        padding: 0 10px;
+        background-color: #fff;
     }
 </style>
