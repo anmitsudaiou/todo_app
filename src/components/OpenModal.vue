@@ -1,11 +1,13 @@
 <template>
     <div id="overRay">
         <div id="contents">
-            <input placeholder="追加したいタスクを入力してください" id="taskContents" type="text"><br><br>
-            <input type="date"><br><br>
+            <input placeholder="タスクを入力してください" id="taskContents" type="text"><br><br>
+            <input type="date" id="dateContents"><br><br>
             <!-- <datepicker :language="ja"></datepicker> -->
-            <button @click="register">追加</button>
-            <button @click="back">戻る</button>
+            <div class="button-space">
+                <button id="register" @click="register">追加</button>
+                <button id="back" @click="back">戻る</button>
+            </div>
         </div>
     </div>
 </template>
@@ -21,4 +23,28 @@ export default {
 </script>
 
 <style scoped>
+#taskContents {
+    font-size: 15px;
+    width: 90%;
+}
+
+#dateContents {
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.button-space {
+    display: flex;
+    justify-content: space-around;
+}
+
+#register {
+    width: 50%;
+    margin-left: 4;
+}
+
+#back {
+    width: 40%;
+}
 </style>
