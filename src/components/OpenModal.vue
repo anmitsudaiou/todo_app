@@ -1,7 +1,7 @@
 <template>
     <div id="overRay">
         <div id="contents">
-            <input type="text"><br><br>
+            <input placeholder="追加したいタスクを入力してください" id="taskContents" type="text"><br><br>
             <input type="date"><br><br>
             <button @click="register">追加</button>
             <button @click="clickEvent">戻る</button>
@@ -18,3 +18,6 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+</style>
